@@ -1,0 +1,311 @@
+/* Reiniciar márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor central */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 180px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Main content */
+main {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main .intro {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Carrusel de equipo */
+.carrusel-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.carrusel-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carrusel-btn:hover {
+    background-color: #0056b3;
+}
+
+.carrusel-equipo {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.integrante {
+    display: none;
+    flex: 0 0 50%;
+    text-align: center;
+    padding: 0 20px;
+    transition: transform 0.5s ease;
+}
+
+.integrante.activo {
+    display: block;
+}
+
+.integrante img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.integrante h4 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.integrante p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .carrusel-equipo {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .carrusel-contenedor {
+        flex-direction: column;
+    }
+
+    .carrusel-btn {
+        margin-bottom: 20px;
+    }
+
+    .integrante img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Estilo para artículos de noticias */
+.noticia {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.noticia img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.noticia h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.noticia strong {
+    font-weight: bold;
+}
+/* Estilo del formulario de contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Footer pegajoso */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Contenedor para que el footer se quede abajo */
+.wrapper {
+    flex: 1;
+}
