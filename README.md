@@ -1,2 +1,2 @@
 # Servicio-alimentario-Escolar
-Plan Ribbentrop-Molotov
+Pacto Ribbentrop-Molotov
