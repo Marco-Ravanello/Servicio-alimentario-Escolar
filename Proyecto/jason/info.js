@@ -11,7 +11,7 @@ window.onload = function() {
     setTimeout(() => {
         const toastInfo = document.getElementById('3'); // Toast con id 3
         toastInfo.classList.add('mostrar');
-    }, 1500); // 5000 milisegundos = 5 segundos
+    }, 1500); // 1500 milisegundos = 1.5 segundos
 };
 
 // Event listener para detectar click en los toasts
