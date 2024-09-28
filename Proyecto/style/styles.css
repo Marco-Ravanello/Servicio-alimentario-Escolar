@@ -21,7 +21,11 @@ body {
     max-width: 1200px;
     margin: 10px auto;
 }
-
+a{
+    color: #fff;
+    text-decoration: none;
+    
+}
 /* Encabezado */
 header {
     background-color: #ffffff;
