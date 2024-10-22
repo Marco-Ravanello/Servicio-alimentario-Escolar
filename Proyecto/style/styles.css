@@ -34,19 +34,36 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Contenedor del header */
+.header-container {
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    align-items: center; /* Centrar verticalmente */
+    width: 90%; /* Ajustar el ancho */
+    max-width: 2000px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
 header .logo {
     width: 180px;
     display: inline-block;
     vertical-align: middle;
 }
 
+/* Estilos para el menú */
 header nav {
-    display: inline-block;
-    float: right;
+    display: flex; /* Usar flexbox para el diseño */
+    align-items: center; /* Centrar verticalmente los elementos */
+    margin-left: 30px; /* Añadir margen izquierdo para mover a la derecha */
 }
 
+/* Asegúrate de que el ul ocupe el espacio necesario */
 header nav ul {
     list-style-type: none;
+    display: flex; /* Usar flexbox para el menú */
+    flex-grow: 5; /* Permitir que la lista crezca para ocupar espacio */
+    justify-content: center; /* Centrar el contenido de la lista */
+    margin: 0; /* Quitar margen */
 }
 
 header nav ul li {
@@ -69,7 +86,25 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Menú desplegable */
+/* Estilo para el botón "Mi Escuela" */
+.mi-escuela {
+    margin-left: auto; /* Empuja "Mi Escuela" al extremo derecho */
+}
+
+.mi-escuela a {
+    background-color: #ffffff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.mi-escuela a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
 .dropdown {
     position: relative;
     display: inline-block;
