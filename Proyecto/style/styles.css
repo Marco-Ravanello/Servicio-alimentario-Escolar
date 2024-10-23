@@ -293,6 +293,59 @@ main p {
 .noticia strong {
     font-weight: bold;
 }
+/* Estilo para el campo desplegable */
+.contact-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    appearance: none; /* Remover el estilo por defecto del navegador */
+}
+
+.contact-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo para el input de archivo */
+.contact-form input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+/* Estilo para el label que actúa como botón de archivo */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #90939e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Efecto hover para el botón de subir archivos */
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el input de archivo si es necesario hacer algún ajuste adicional */
+input[type="file"] {
+   
+}
+.contact-form input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
 /* Estilo del formulario de contacto */
 .contact-form {
     max-width: 600px;
