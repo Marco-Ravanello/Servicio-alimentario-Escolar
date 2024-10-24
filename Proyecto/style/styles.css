@@ -351,7 +351,16 @@ input[type="file"] {
     max-width: 600px;
     margin: 0 auto;
 }
-
+/* Estilo personalizado para el campo de fecha */
+input[type="date"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
 .form-group {
     display: flex;
     flex-direction: column;
