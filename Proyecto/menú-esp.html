@@ -31,9 +31,13 @@
                         <li><a href="noticias.html">Noticias</a></li>
                         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                     </ul>
-                    <div class="mi-escuela">
-                        <a href="mi-escuela.html">Mi Escuela</a>
-                    </div>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Mi Escuela</a>
+                        <div class="dropdown-content">
+                            <a href="mi-escuela.html">Perfil</a>
+                            <a href="prestaciones.html">Mis prestaciones</a>
+                        </div>
+                    </li>
                 </nav>
         </header>
         <main class="container">
@@ -46,8 +50,8 @@
                 <input type="text" id="nombre" name="nombre" required>
             </div>
             <div class="form-group">
-                <label for="email">DNI:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="dni">DNI:</label>
+                <input type="number" id="dni" name="dni" required>
             </div>
             <div class="form-group">
                 <label for="tipo-reclamo">Tipo de Patología</label>
@@ -57,7 +61,12 @@
                     <option value="celiaco">Celiaquia</option>
                     <option value="dblanda">Dieta blanda</option>
                     <option value="aplv">APLV</option>
+                    <option value="otro">Otro</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <label for="nombre">En caso de ser otro, completar:</label>
+                <input type="text" id="pat-ot" name="pat-ot">
             </div>
             <div class="form-group">
                 <label for="mensaje">Detalle:</label>

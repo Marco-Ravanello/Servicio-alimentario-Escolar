@@ -31,9 +31,13 @@
                         <li><a href="noticias.html">Noticias</a></li>
                         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                     </ul>
-                    <div class="mi-escuela">
-                        <a href="mi-escuela.html">Mi Escuela</a>
-                    </div>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Mi Escuela</a>
+                        <div class="dropdown-content">
+                            <a href="mi-escuela.html">Perfil</a>
+                            <a href="prestaciones.html">Mis prestaciones</a>
+                        </div>
+                    </li>
                 </nav>
         </header>
         <main class="container">
@@ -46,8 +50,8 @@
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Cargo:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="cargo">Cargo:</label>
+                        <input type="text" id="cargo" name="cargo" required>
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Descripción:</label>
