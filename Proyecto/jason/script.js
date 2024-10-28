@@ -43,3 +43,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializar mostrando los dos primeros integrantes
     mostrarIntegrantes(currentIndex);
 });
+// script.js
+function enableEditMode() {
+    document.querySelectorAll('.profile-form input').forEach(input => {
+        input.removeAttribute('readonly');
+    });
+    document.getElementById('editButton').style.display = 'none';
+    document.getElementById('saveButton').style.display = 'inline-block';
+    document.getElementById('cancelButton').style.display = 'inline-block';
+}
+
+function cancelEdit() {
+    document.querySelectorAll('.profile-form input').forEach(input => {
+        input.setAttribute('readonly', 'readonly');
+        input.value = input.defaultValue; // Restaurar valores originales
+    });
+    document.getElementById('editButton').style.display = 'inline-block';
+    document.getElementById('saveButton').style.display = 'none';
+    document.getElementById('cancelButton').style.display = 'none';
+}
