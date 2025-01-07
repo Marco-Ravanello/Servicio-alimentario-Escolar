@@ -415,3 +415,86 @@ footer {
 .wrapper {
     flex: 1;
 }
+/* Estilos para la sección de recetas */
+.recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.receta {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.receta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.receta h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.receta p {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.receta a {
+    display: block;
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de tips */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tip {
+    background: #f9fafc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tip h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.tip p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/* Footer fijo abajo */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+/* Contenedor para que el contenido se ajuste correctamente */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
